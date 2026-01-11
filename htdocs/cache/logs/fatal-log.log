@@ -1,0 +1,52 @@
+[2026-01-02, 18:59:14] /Applications/MAMP/htdocs/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(196): Unable to load template 'file:widgets/widget_error.tpl'
+[2026-01-02, 18:59:23] /Applications/MAMP/htdocs/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(196): Unable to load template 'file:widgets/widget_error.tpl'
+[2026-01-02, 18:59:23] /Applications/MAMP/htdocs/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(196): Unable to load template 'file:widgets/widget_error.tpl'
+[2026-01-02, 18:59:24] /Applications/MAMP/htdocs/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(196): Unable to load template 'file:widgets/widget_error.tpl'
+[2026-01-02, 18:59:26] /Applications/MAMP/htdocs/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(196): Unable to load template 'file:widgets/widget_error.tpl'
+[2026-01-02, 19:34:07] /Applications/MAMP/htdocs/custom/templates/Aetheria/template.php(163): Class "DefaultRevamp_Template" not found
+[2026-01-03, 00:47:50] /Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl(69): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl"  on line 69 "{if $key != 'profile' and !$item.title|in_string:'<img'}" unknown modifier 'in_string'
+[2026-01-03, 00:48:35] /Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl(69): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl"  on line 69 "{if $key != 'profile' and !$item.title|in_string:'<img>'}" unknown modifier 'in_string'
+[2026-01-03, 00:48:36] /Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl(69): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl"  on line 69 "{if $key != 'profile' and !$item.title|in_string:'<img>'}" unknown modifier 'in_string'
+[2026-01-03, 00:48:38] /Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl(69): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl"  on line 69 "{if $key != 'profile' and !$item.title|in_string:'<img>'}" unknown modifier 'in_string'
+[2026-01-03, 00:54:27] /Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl(69): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl"  on line 69 "{elseif !strstr($item.title, '<img')}" PHP function 'strstr' not allowed by security setting
+[2026-01-03, 20:14:08] /Applications/MAMP/htdocs/custom/templates/Aetheria/template.php(41): Call to a member function assign() on null
+[2026-01-03, 20:30:48] /Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl(46): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/navbar.tpl"  on line 46 "<span style="display:none; @media(min-width:900px){display:inline;}">{$LOGGED_IN_USER.username}</span>"  - Unexpected ":", expected one of: "}"
+[2026-01-03, 22:15:41] /Applications/MAMP/htdocs/custom/templates/Aetheria/header.tpl(6): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/header.tpl"  on line 6 "<html lang="{if defined('HTML_LANG')}{$HTML_LANG}{else}en{/if}" {if defined('HTML_RTL') && HTML_RTL eq true} dir="rtl" {/if}>" PHP function 'defined' not allowed by security setting
+[2026-01-03, 22:34:23] /Applications/MAMP/htdocs/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(196): Unable to load template 'file:header.tpl' in 'index.tpl'
+[2026-01-05, 16:13:50] /Applications/MAMP/htdocs/custom/templates/Aetheria/forum/view_topic.tpl(67): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/forum/view_topic.tpl"  on line 67 "<div class="topic-meta">" unclosed {foreach} tag
+[2026-01-05, 16:16:16] /Applications/MAMP/htdocs/cache/templates_c/a993ac7e87e6d85aa51c15c9888186149703aed2_0.file.view_topic.tpl.php(210): count(): Argument #1 ($value) must be of type Countable|array, null given
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:21:02] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:22:46] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:22:49] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:22:50] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 15:23:04] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] No such file or directory
+[2026-01-05, 17:27:47] /Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/news.tpl(16): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/news.tpl"  on line 16 ""desc"  =>caching picdolina","  - Unexpected " ", expected one of: "","" , "]"
+[2026-01-05, 17:27:49] /Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/news.tpl(16): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/news.tpl"  on line 16 ""desc"  =>caching picdolina","  - Unexpected " ", expected one of: "","" , "]"
+[2026-01-05, 17:44:51] /Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/news.tpl(44): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/news.tpl"  on line 44 "{* Se lasciato vuoto, usa il colore default del tema *}"  - Unexpected " 
+        ", expected one of: "","" , "]"
+[2026-01-05, 20:46:54] /Applications/MAMP/htdocs/custom/templates/Aetheria/custom.tpl(14): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/custom.tpl"  on line 14 "{elseif isset($TITLE) && $TITLE|strstr:"Article:"}" modifier 'strstr' not allowed by security setting
+[2026-01-08, 19:38:26] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:29] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:30] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:30] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:31] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:31] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:32] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 19:38:32] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 22:25:18] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 22:25:23] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-08, 22:25:24] /Applications/MAMP/htdocs/core/classes/Database/DB.php(43): SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for host.docker.internal failed: nodename nor servname provided, or not known
+[2026-01-10, 22:46:41] /Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/article.tpl(19): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/article.tpl"  on line 19 ""type"     => "guide",  /* Questo cambierà il tasto indietro */"  - Unexpected "/"
+[2026-01-10, 22:47:59] /Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/article.tpl(19): Syntax error in template "file:/Applications/MAMP/htdocs/custom/templates/Aetheria/custom_pages/article.tpl"  on line 19 ""type"     => "guide",  /* Questo cambierà il tasto indietro */"  - Unexpected "/"

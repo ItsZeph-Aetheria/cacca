@@ -1,0 +1,131 @@
+<?php
+/*
+ *  Template: Aetheria
+ *  Author: Tu & AI
+ */
+
+class Aetheria_Template extends SmartyTemplateBase
+{
+    private array $_template;
+    private Language $_language;
+    private User $_user;
+    private Pages $_pages;
+
+    public function __construct(Cache $cache, Language $language, User $user, Pages $pages)
+    {
+        $template = [
+            'name' => 'Aetheria',
+            'version' => '1.0.0',
+            'nl_version' => '2.2.1',
+            'author' => 'Tu & AI',
+        ];
+
+        $template['path'] = (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/' . $template['name'] . '/';
+
+        parent::__construct($template['name'], $template['version'], $template['nl_version'], $template['author'], __DIR__);
+
+        $this->_settings = ROOT_PATH . '/custom/templates/DefaultRevamp/template_settings/settings.php';
+
+        $this->assets()->include([
+            AssetTree::FONT_AWESOME,
+            AssetTree::JQUERY,
+            AssetTree::JQUERY_COOKIE,
+            AssetTree::FOMANTIC_UI,
+        ]);
+
+        $this->getEngine()->addVariable('TEMPLATE', $template);
+        $this->getEngine()->addVariable('FORUM_SPAM_WARNING_TITLE', $language->get('general', 'warning'));
+
+        $cache->setCache('template_settings');
+        
+        $smartyDarkMode = false;
+        $smartyNavbarColour = '';
+
+        if ($cache->isCached('navbarColour')) {
+            $navbarColour = $cache->retrieve('navbarColour');
+            if ($navbarColour != 'white') {
+                $smartyNavbarColour = $navbarColour . ' inverted';
+            }
+        }
+
+        $this->getEngine()->addVariables([
+            'DEFAULT_REVAMP_DARK_MODE' => $smartyDarkMode,
+            'DEFAULT_REVAMP_NAVBAR_EXTRA_CLASSES' => $smartyNavbarColour,
+        ]);
+
+        if (defined('AUTO_LANGUAGE_VALUE')) {
+            $this->getEngine()->addVariable('AUTO_LANGUAGE_VALUE', AUTO_LANGUAGE_VALUE);
+        }
+
+        $this->_template = $template;
+        $this->_language = $language;
+        $this->_user = $user;
+        $this->_pages = $pages;
+    }
+
+    public function onPageLoad()
+    {
+        $page_load = microtime(true) - PAGE_START_TIME;
+        define('PAGE_LOAD_TIME', $this->_language->get('general', 'page_loaded_in', ['time' => round($page_load, 3)]));
+
+        // CSS
+        $this->addCSSFiles([
+            $this->_template['path'] . 'css/custom.css?v=220' => [],
+            $this->_template['path'] . 'css/aetheria.css?v=' . time() => [],
+        ]);
+
+        // ==========================================================
+        // FIX TOKEN: Forziamo il caricamento del Token CSRF
+        // ==========================================================
+        $this->getEngine()->addVariable('TOKEN', Token::get());
+
+        $route = (isset($_GET['route']) ? rtrim($_GET['route'], '/') : '/');
+
+        $JSVariables = [
+            'siteName' => Output::getClean(SITE_NAME),
+            'siteURL' => URL::build('/'),
+            'fullSiteURL' => URL::getSelfURL() . ltrim(URL::build('/'), '/'),
+            'page' => PAGE,
+            'avatarSource' => AvatarSource::getUrlToFormat(),
+            'copied' => $this->_language->get('general', 'copied'),
+            'cookieNotice' => $this->_language->get('general', 'cookie_notice'),
+            'loggedIn' => $this->_user->isLoggedIn() ? '1' : '0',
+            'route' => $route,
+            'csrfToken' => Token::get(),
+        ];
+
+        $cache = new Cache(['name' => 'nameless', 'extension' => '.cache', 'path' => ROOT_PATH . '/cache/']);
+        $cache->setCache('backgroundcache');
+        $logo_image = $cache->retrieve('logo_image');
+        $JSVariables['logoImage'] = !empty($logo_image) ? $logo_image : null;
+
+        if (str_contains($route, '/forum/topic/') || PAGE === 'profile') {
+            $this->assets()->include([
+                AssetTree::JQUERY_UI,
+            ]);
+        }
+
+        $JSVars = '';
+        $i = 0;
+        foreach ($JSVariables as $var => $value) {
+            $JSVars .= ($i == 0 ? 'const ' : ', ') . $var . ' = ' . json_encode($value);
+            $i++;
+        }
+        $this->addJSScript($JSVars);
+
+        // JS
+        $this->addJSFiles([
+            $this->_template['path'] . 'js/core/core.js?v=203' => [],
+            $this->_template['path'] . 'js/core/user.js' => [],
+            $this->_template['path'] . 'js/core/pages.js?v=203' => [],
+            $this->_template['path'] . 'js/aetheria.js?v=' . time() => [],
+        ]);
+
+        foreach ($this->_pages->getAjaxScripts() as $script) {
+            $this->addJSScript('$.getJSON(\'' . $script . '\', function(data) {});');
+        }
+    }
+}
+
+$template = new Aetheria_Template($cache, $language, $user, $pages);
+$template_pagination = ['div' => 'ui mini pagination menu', 'a' => '{x}item'];

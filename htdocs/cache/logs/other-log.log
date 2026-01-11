@@ -1,0 +1,280 @@
+[2026-01-02, 17:53:48] Phinx by CakePHP - https://phinx.org.
+
+using config file core/migrations/phinx.php
+using config parser php
+using migration paths 
+ - /Applications/MAMP/htdocs/core/migrations
+warning no environment specified, defaulting to: nameless
+using adapter mysql
+using database nameless
+ordering by creation time
+
+ == 20220517030607 CreateLanguagesTable: migrating 
+ == 20220517030607 CreateLanguagesTable: migrated 0.0030s
+
+ == 20220517030609 CreateTemplatesTable: migrating 
+ == 20220517030609 CreateTemplatesTable: migrated 0.0021s
+
+ == 20220517030611 CreateUsersTable: migrating 
+ == 20220517030611 CreateUsersTable: migrated 0.0180s
+
+ == 20220517030657 CreateReactionsTable: migrating 
+ == 20220517030657 CreateReactionsTable: migrated 0.0026s
+
+ == 20220518024302 CreatePanelTemplatesTable: migrating 
+ == 20220518024302 CreatePanelTemplatesTable: migrated 0.0022s
+
+ == 20220518024945 CreateBlockedUsersTable: migrating 
+ == 20220518024945 CreateBlockedUsersTable: migrated 0.0084s
+
+ == 20220518025652 CreateGroupsTable: migrating 
+ == 20220518025652 CreateGroupsTable: migrated 0.0027s
+
+ == 20220518025817 CreateUsersGroupsTable: migrating 
+ == 20220518025817 CreateUsersGroupsTable: migrated 0.0101s
+
+ == 20220518031216 CreateAlertsTable: migrating 
+ == 20220518031216 CreateAlertsTable: migrated 0.0094s
+
+ == 20220518032305 CreateCustomAnnouncementsTable: migrating 
+ == 20220518032305 CreateCustomAnnouncementsTable: migrated 0.0023s
+
+ == 20220518032919 CreateCustomPagesTable: migrating 
+ == 20220518032919 CreateCustomPagesTable: migrated 0.0038s
+
+ == 20220518033833 CreateCustomPagesPermissionsTable: migrating 
+ == 20220518033833 CreateCustomPagesPermissionsTable: migrated 0.0077s
+
+ == 20220518034729 CreateEmailErrorsTable: migrating 
+ == 20220518034729 CreateEmailErrorsTable: migrated 0.0080s
+
+ == 20220518035532 CreateGroupsTemplatesTable: migrating 
+ == 20220518035532 CreateGroupsTemplatesTable: migrated 0.0080s
+
+ == 20220518040058 CreateGroupSyncTable: migrating 
+ == 20220518040058 CreateGroupSyncTable: migrated 0.0071s
+
+ == 20220518040456 CreateHooksTable: migrating 
+ == 20220518040456 CreateHooksTable: migrated 0.0023s
+
+ == 20220518040806 CreateIpBansTable: migrating 
+ == 20220518040806 CreateIpBansTable: migrated 0.0078s
+
+ == 20220519020719 CreateInfractionsTable: migrating 
+ == 20220519020719 CreateInfractionsTable: migrated 0.0099s
+
+ == 20220519021237 CreateLogsTable: migrating 
+ == 20220519021237 CreateLogsTable: migrated 0.0022s
+
+ == 20220519021711 CreateMcServersTable: migrating 
+ == 20220519021711 CreateMcServersTable: migrated 0.0022s
+
+ == 20220519022400 CreateModulesTable: migrating 
+ == 20220519022400 CreateModulesTable: migrated 0.0029s
+
+ == 20220519022945 CreateWidgetsTable: migrating 
+ == 20220519022945 CreateWidgetsTable: migrated 0.0018s
+
+ == 20220519023439 CreatePrivacyTermsTable: migrating 
+ == 20220519023439 CreatePrivacyTermsTable: migrated 0.0016s
+
+ == 20220519023748 CreateOauthTable: migrating 
+ == 20220519023748 CreateOauthTable: migrated 0.0022s
+
+ == 20220519024247 CreateOauthUsersTable: migrating 
+ == 20220519024247 CreateOauthUsersTable: migrated 0.0094s
+
+ == 20220519024833 CreateOnlineGuestsTable: migrating 
+ == 20220519024833 CreateOnlineGuestsTable: migrated 0.0019s
+
+ == 20220519025351 CreatePageDescriptionsTable: migrating 
+ == 20220519025351 CreatePageDescriptionsTable: migrated 0.0017s
+
+ == 20220519025851 CreatePrivateMessagesTable: migrating 
+ == 20220519025851 CreatePrivateMessagesTable: migrated 0.0097s
+
+ == 20220519030416 CreatePrivateMessagesRepliesTable: migrating 
+ == 20220519030416 CreatePrivateMessagesRepliesTable: migrated 0.0078s
+
+ == 20220519030902 CreatePrivateMessagesUsersTable: migrating 
+ == 20220519030902 CreatePrivateMessagesUsersTable: migrated 0.0102s
+
+ == 20220519031223 CreateProfileFieldsTable: migrating 
+ == 20220519031223 CreateProfileFieldsTable: migrated 0.0026s
+
+ == 20220519031732 CreateUsersProfileFieldsTable: migrating 
+ == 20220519031732 CreateUsersProfileFieldsTable: migrated 0.0081s
+
+ == 20220519032328 CreateUsersSessionTable: migrating 
+ == 20220519032328 CreateUsersSessionTable: migrated 0.0071s
+
+ == 20220519034124 CreateUsersIpsTable: migrating 
+ == 20220519034124 CreateUsersIpsTable: migrated 0.0073s
+
+ == 20220519040344 CreateUsersAdminSessionTable: migrating 
+ == 20220519040344 CreateUsersAdminSessionTable: migrated 0.0071s
+
+ == 20220519040925 CreateIntegrationsTable: migrating 
+ == 20220519040925 CreateIntegrationsTable: migrated 0.0020s
+
+ == 20220519041811 CreateUsersIntegrationsTable: migrating 
+ == 20220519041811 CreateUsersIntegrationsTable: migrated 0.0089s
+
+ == 20220519150540 CreatePlaceholdersSettingsTable: migrating 
+ == 20220519150540 CreatePlaceholdersSettingsTable: migrated 0.0075s
+
+ == 20220519151124 CreateUsersPlaceholdersTable: migrating 
+ == 20220519151124 CreateUsersPlaceholdersTable: migrated 0.0062s
+
+ == 20220519152021 CreateUserProfileWallPostsTable: migrating 
+ == 20220519152021 CreateUserProfileWallPostsTable: migrated 0.0080s
+
+ == 20220519152346 CreateUserProfileWallPostsReactionsTable: migrating 
+ == 20220519152346 CreateUserProfileWallPostsReactionsTable: migrated 0.0104s
+
+ == 20220519152544 CreateUserProfileWallPostsRepliesTable: migrating 
+ == 20220519152544 CreateUserProfileWallPostsRepliesTable: migrated 0.0082s
+
+ == 20220519153135 CreateForumsTable: migrating 
+ == 20220519153135 CreateForumsTable: migrated 0.0088s
+
+ == 20220519153136 CreateTopicsTable: migrating 
+ == 20220519153136 CreateTopicsTable: migrated 0.0186s
+
+ == 20220519153137 CreatePostsTable: migrating 
+ == 20220519153137 CreatePostsTable: migrated 0.0116s
+
+ == 20220519153139 CreateReportsTable: migrating 
+ == 20220519153139 CreateReportsTable: migrated 0.0103s
+
+ == 20220519153651 CreateReportsCommentsTable: migrating 
+ == 20220519153651 CreateReportsCommentsTable: migrated 0.0086s
+
+ == 20220519154102 CreateSettingsTable: migrating 
+ == 20220519154102 CreateSettingsTable: migrated 0.0017s
+
+ == 20220519154314 CreateQueryErrorsTable: migrating 
+ == 20220519154314 CreateQueryErrorsTable: migrated 0.0016s
+
+ == 20220519154440 CreateQueryResultsTable: migrating 
+ == 20220519154440 CreateQueryResultsTable: migrated 0.0063s
+
+ == 20220519154832 CreateForumsLabelsTable: migrating 
+ == 20220519154832 CreateForumsLabelsTable: migrated 0.0016s
+
+ == 20220519161304 CreateTopicsFollowingTable: migrating 
+ == 20220519161304 CreateTopicsFollowingTable: migrated 0.0077s
+
+ == 20220519161539 CreateForumsPermissionsTable: migrating 
+ == 20220519161539 CreateForumsPermissionsTable: migrated 0.0066s
+
+ == 20220519161812 CreateForumsReactionsTable: migrating 
+ == 20220519161812 CreateForumsReactionsTable: migrated 0.0091s
+
+ == 20220519161954 CreateForumsTopicLabelsTable: migrating 
+ == 20220519161954 CreateForumsTopicLabelsTable: migrated 0.0017s
+
+ == 20220525051321 CreateUuidCacheTable: migrating 
+ == 20220525051321 CreateUuidCacheTable: migrated 0.0026s
+
+ == 20220525051337 CreateUsersUsernameHistoryTable: migrating 
+ == 20220525051337 CreateUsersUsernameHistoryTable: migrated 0.0074s
+
+ == 20220602132634 NullablePostDate: migrating 
+ == 20220602132634 NullablePostDate: migrated 0.0080s
+
+ == 20220609184529 MakeUsernameColumnNullableOnUserIntegrationsTable: migrating 
+ == 20220609184529 MakeUsernameColumnNullableOnUserIntegrationsTable: migrated 0.0037s
+
+ == 20220612041555 DropGroupHtmlLgColumnOnGroupsTable: migrating 
+ == 20220612041555 DropGroupHtmlLgColumnOnGroupsTable: migrated 0.0014s
+
+ == 20220620183016 AddModuleSettingsColumn: migrating 
+ == 20220620183016 AddModuleSettingsColumn: migrated 0.0063s
+
+ == 20220620190645 MoveEmailSettingsToConfig: migrating 
+ == 20220620190645 MoveEmailSettingsToConfig: migrated 0.0002s
+
+ == 20220805152044 ForumPostMediumText: migrating 
+ == 20220805152044 ForumPostMediumText: migrated 0.0094s
+
+ == 20220805152052 PrivateMessageMediumText: migrating 
+ == 20220805152052 PrivateMessageMediumText: migrated 0.0053s
+
+ == 20220805152101 CustomPageMediumText: migrating 
+ == 20220805152101 CustomPageMediumText: migrated 0.0052s
+
+ == 20220805153842 LogInfoMediumText: migrating 
+ == 20220805153842 LogInfoMediumText: migrated 0.0039s
+
+ == 20220805174255 SettingsValueText: migrating 
+ == 20220805174255 SettingsValueText: migrated 0.0043s
+
+ == 20220807142446 AddUserSessionActivityColumns: migrating 
+ == 20220807142446 AddUserSessionActivityColumns: migrated 0.0077s
+
+ == 20220807153708 DeleteAdminSessionTable: migrating 
+ == 20220807153708 DeleteAdminSessionTable: migrated 0.0023s
+
+ == 20220921014904 CreateMemberListsTable: migrating 
+ == 20220921014904 CreateMemberListsTable: migrated 0.0019s
+
+ == 20221010152624 AddIpToUserSessions: migrating 
+ == 20221010152624 AddIpToUserSessions: migrated 0.0042s
+
+ == 20221230144555 ReportsReportedIdNullable: migrating 
+ == 20221230144555 ReportsReportedIdNullable: migrated 0.0030s
+
+ == 20230114124352 UsersNightModeNullable: migrating 
+ == 20230114124352 UsersNightModeNullable: migrated 0.0233s
+
+ == 20230121015140 AddAuthMeColumnsToUserTable: migrating 
+ == 20230121015140 AddAuthMeColumnsToUserTable: migrated 0.0214s
+
+ == 20230206192726 CreateQueueTable: migrating 
+ == 20230206192726 CreateQueueTable: migrated 0.0097s
+
+ == 20230301084250 AddOrderColumnToReactionsTable: migrating 
+ == 20230301084250 AddOrderColumnToReactionsTable: migrated 0.0045s
+
+ == 20230302090631 AddImageColumnToPageDescriptionsTable: migrating 
+ == 20230302090631 AddImageColumnToPageDescriptionsTable: migrated 0.0029s
+
+ == 20230304231334 DeleteUsersReputationColumn: migrating 
+ == 20230304231334 DeleteUsersReputationColumn: migrated 0.0232s
+
+ == 20230611003455 AddCustomScoreColumnToReactionsTable: migrating 
+ == 20230611003455 AddCustomScoreColumnToReactionsTable: migrated 0.0059s
+
+ == 20230613054745 RenameHighestReactionScoresMemberListProvider: migrating 
+ == 20230613054745 RenameHighestReactionScoresMemberListProvider: migrated 0.0011s
+
+ == 20230908180037 CreateUsersNotificationPreferencesTable: migrating 
+ == 20230908180037 CreateUsersNotificationPreferencesTable: migrated 0.0081s
+
+ == 20231121184810 AddContentRichToAlertsTable: migrating 
+ == 20231121184810 AddContentRichToAlertsTable: migrated 0.0052s
+
+ == 20240309204948 AddPurifyBypassColumToAlertsTable: migrating 
+ == 20240309204948 AddPurifyBypassColumToAlertsTable: migrated 0.0038s
+
+ == 20240616113453 AddSessionExpiryColumnToUsersSessionTable: migrating 
+ == 20240616113453 AddSessionExpiryColumnToUsersSessionTable: migrated 0.0041s
+
+ == 20240714105154 RenameDeviceNameColumnUsersSessionTable: migrating 
+ == 20240714105154 RenameDeviceNameColumnUsersSessionTable: migrated 0.0040s
+
+ == 20240714105702 AddServerIdColumnToReportsTable: migrating 
+ == 20240714105702 AddServerIdColumnToReportsTable: migrated 0.0167s
+
+ == 20240720110121 ChangeWidgetsLocationLength: migrating 
+ == 20240720110121 ChangeWidgetsLocationLength: migrated 0.0014s
+
+ == 20241201113419 AddPlaceholderOrderToPlaceholderSettingsTable: migrating 
+ == 20241201113419 AddPlaceholderOrderToPlaceholderSettingsTable: migrated 0.0041s
+
+ == 20250319185504 UpdateForumTopicKeyCascades: migrating 
+ == 20250319185504 UpdateForumTopicKeyCascades: migrated 0.0244s
+
+All Done. Took 0.6483s
+
