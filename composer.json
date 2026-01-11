@@ -1,0 +1,6 @@
+{
+    "name": "nameless/nameless",
+    "require": {
+        "php": "^8.0"
+    }
+}
