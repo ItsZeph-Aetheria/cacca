@@ -21,7 +21,7 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
 RUN a2enmod rewrite
 
 # Copia i file del tuo sito dentro la cartella web del container
-COPY . /var/www/html/
+COPY htdocs/ /var/www/html/
 
 # Imposta i permessi corretti per Apache
 RUN chown -R www-data:www-data /var/www/html \
